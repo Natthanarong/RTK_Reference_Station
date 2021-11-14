@@ -4,10 +4,9 @@
 # From https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux
 # Improve numpy problem https://github.com/numpy/numpy/issues/14772
 
-import glob, re, math, utm
+import glob, re, math, utm, time, os
 import numpy as np
 from haversine import haversine, Unit
-import time, os, csv
 
 # Define the RTK and PPP Solution filename
 name=['/home/pi/Desktop/Program/Solution/b_rtk.pos','/home/pi/Desktop/Program/Solution/b_ppp.pos','/home/pi/Desktop/Program/Solution/b_single.pos']
